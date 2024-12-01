@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>EventGPT: Event Stream Understanding with Multimodal Large Language Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,38 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <style>
+    .gradient-text {
+      font-weight: bold;
+      background: linear-gradient(90deg, red, purple);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .title {
+      font-weight: normal;
+      line-height: 1.4;
+      text-align: center;
+    }
+  </style>
+    <style>
+      .gradient-visual {
+        font-weight: bold;
+        background: linear-gradient(90deg, blue, purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .title {
+        font-weight: normal;
+        line-height: 1.4;
+        text-align: center;
+      }
+    </style>
+  <style>
+    .publication-title {
+        font-weight: bold;
+    }
+    </style>
+    
 </head>
 <body>
 
@@ -52,21 +84,35 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <!-- <h1 class="title is-1 publication-title" style="font-weight: bold;"> -->
+            <h1 class="title is-1 publication-title" style="font-weight: bold; align-items: center; gap: 10px;">
+            <!-- <img src="static/images/logo.png" alt="Logo" style="height: 2em; width: auto;"> -->
+            <span class="gradient-text">EventGPT</span>: Event Stream Understanding with Multimodal Large Language Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Shaoyu Liu</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jianing Li</a><sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Guanghui Zhao</a><sup>1</sup>,</span>
+                    <span class="author-block"></span>
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yunjian Zhang</a><sup>3</sup>,</span>
+                      <span class="author-block"></span>
+                        <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xin Meng</a><sup>4</sup>,</span>
+                        <br>
+                        <span class="author-block"></span>
+                          <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Fei Richard Yu</a><sup>5</sup>,</span>
+                          <span class="author-block"></span>
+                            <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xiangyang Ji</a><sup>2</sup>,</span>
+                            <span class="author-block"></span>
+                              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Ming Li</a><sup>5</sup>,</span>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Xidian University</a>,</span><sup>2</sup>Tsinghua University</a>,</span><sup>3</sup>UCAS</a>,</span><sup>4</sup>Peking University<br><sup>5</sup>Guangdong Laboratory of Artificial Intelligence and Digital Economy(SZ)
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -83,7 +129,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +137,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/XduSyL/EventGPT" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -144,11 +190,11 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Event cameras record visual information as asynchronous pixel change streams, excelling at scene perception under unsatisfactory lighting or high-dynamic conditions. Existing multimodal large language models (MLLMs) concentrate on natural RGB images, failing in scenarios where event data fits better. In this paper, we introduce EventGPT, the first MLLM for event stream understanding, to the best of our knowledge, marking a pioneering attempt to integrate large language models (LLMs) with event stream comprehension. To mitigate the huge domain gaps, we develop a three-stage optimization paradigm to gradually equip a pre-trained LLM with the capability of understanding event-based scenes. Our EventGPT comprises an event encoder, followed by a spatio-temporal aggregator, a linear projector, an event-language adapter, and an LLM. Firstly, RGB image-text pairs generated by GPT are leveraged to warm up the linear projector, referring to LLaVA, as the gap between natural image and language modalities is relatively smaller. Secondly, we construct a synthetic yet large dataset, N-ImageNet-Chat, consisting of event frames and corresponding texts to enable the use of the spatio-temporal aggregator and to train the event-language adapter, thereby aligning event features more closely with the language space. Finally, we gather an instruction dataset, Event-Chat, which contains extensive real-world data to fine-tune the entire model, further enhancing its generalization ability. We construct a comprehensive benchmark, and experiments show that EventGPT surpasses previous state-of-the-art MLLMs in generation quality, descriptive accuracy, and reasoning capability. 
           </p>
         </div>
       </div>
@@ -157,45 +203,54 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- Paper Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            Overview of our framework. The event encoder transforms raw event tensors into high-dimensional features, which are then aggregated by a spatio-temporal module. These representations are projected and aligned with the large language model, enabling nuanced understanding of event streams and supporting various downstream applications.
+            <br><br>
+            <img src="static/images/overview.png" alt="MY ALT TEXT"/>
+          </p>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End Paper Method -->
+
+<!-- Paper Visualization -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">
+          <b>Visualization in Challenging Scenarios Including 
+            <span class="gradient-visual">Low-Light</span>,
+            <span class="gradient-visual">High-Speed Motion</span>,
+            <span class="gradient-visual">Extreme Illumination Changes</span>
+          </b>
+        </h2>
+        <div class="content has-text-justified">
+          <p>
+            <img src="static/images/tunnel.png" alt="MY ALT TEXT"/>
+            <img src="static/images/cup.png" alt="MY ALT TEXT"/>
+            <img src="static/images/low_light.png" alt="MY ALT TEXT"/>
+            <img src="static/images/balloon.png" alt="MY ALT TEXT"/>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End Paper Visualization -->
+
+
+
 
 
 
@@ -291,7 +346,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">EventGPT: Event Stream Understanding with Multimodal Large Language Models Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
